@@ -8,11 +8,11 @@
 </head>
 <body>
     <header>
-        <h1>Perfil Profesional</h1>
+        <h1 id="main-title">Perfil Profesional</h1>
     </header>
     <div class="container">
         <button id="toggle-menu" class="toggle-menu">☰</button>
-        <nav id="sidebar" class="sidebar">
+        <nav id="sidebar" class="sidebar hidden">
             <ul id="menu" class="menu">
                 <li><button data-target="inicio">Inicio</button></li>
                 <li><button data-target="sobre-mi">Sobre Mí</button></li>
@@ -27,7 +27,7 @@
         </nav>
         <main>
             <section id="inicio" class="section active">
-                <img src="tu-foto.jpg" alt="Foto de Gerardo Adonai Chávez Gutiérrez">
+                <img src="tu-foto.jpg" alt="Foto de Gerardo Adonai Chávez Gutiérrez" id="profile-pic">
                 <h2>Gerardo Adonai Chávez Gutiérrez</h2>
                 <p>Bienvenido a mi perfil profesional.</p>
             </section>
@@ -35,18 +35,20 @@
             <section id="formacion-academica" class="section">
                 <h2>Formación Académica</h2>
                 <div class="licenciaturas">
-                    <button class="licenciatura-btn">Ingeniería en Sistemas Computacionales</button>
-                    <div class="licenciatura-info">
-                        <p>Descripción detallada de la Ingeniería en Sistemas Computacionales...</p>
+                    <!-- Cada botón con animación y toggle -->
+                    <div class="licenciatura">
+                        <button class="licenciatura-btn">Ingeniería en Sistemas Computacionales</button>
+                        <div class="licenciatura-info">
+                            <p>Descripción detallada de la Ingeniería en Sistemas...</p>
+                        </div>
                     </div>
-                    <button class="licenciatura-btn">Licenciatura en Matemáticas</button>
-                    <div class="licenciatura-info">
-                        <p>Descripción detallada de la Licenciatura en Matemáticas...</p>
+                    <div class="licenciatura">
+                        <button class="licenciatura-btn">Ingeniería Civil</button>
+                        <div class="licenciatura-info">
+                            <p>Descripción detallada de Ingeniería Civil...</p>
+                        </div>
                     </div>
-                    <button class="licenciatura-btn">Licenciatura en Física</button>
-                    <div class="licenciatura-info">
-                        <p>Descripción detallada de la Licenciatura en Física...</p>
-                    </div>
+                    <!-- Agrega más licenciaturas aquí -->
                 </div>
             </section>
         </main>
